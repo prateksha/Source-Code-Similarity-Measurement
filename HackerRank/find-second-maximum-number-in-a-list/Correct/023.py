@@ -1,0 +1,5 @@
+input()
+s = set(map(int, input().split(" ")))
+m = max(list(s))
+s.remove(m)
+print(max(list(s)))

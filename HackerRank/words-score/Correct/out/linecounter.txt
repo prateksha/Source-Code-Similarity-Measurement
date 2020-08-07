@@ -1,0 +1,117 @@
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2020-07-16 18:07:52
+count workspace : /home/prateksha/Desktop/IIITB/Semester_6/ProgrammingLanguages/Project/PSimilarity/Proposed_Work/HackerRank/words-score/Correct
+total files : 100
+total code lines : 1339
+total comment lines : 44
+total blank lines : 105
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |            .py|           1339|             44|            105| 1.0e+2|
+   -------------------------------------------------------------------------
+001.py, code is 14, comment is 0, blank is 1.
+002.py, code is 14, comment is 2, blank is 1.
+003.py, code is 14, comment is 0, blank is 1.
+004.py, code is 14, comment is 0, blank is 1.
+005.py, code is 14, comment is 0, blank is 1.
+006.py, code is 5, comment is 0, blank is 1.
+007.py, code is 14, comment is 0, blank is 1.
+008.py, code is 14, comment is 0, blank is 1.
+009.py, code is 14, comment is 0, blank is 1.
+010.py, code is 14, comment is 0, blank is 1.
+011.py, code is 14, comment is 0, blank is 1.
+012.py, code is 5, comment is 0, blank is 1.
+013.py, code is 14, comment is 0, blank is 1.
+014.py, code is 14, comment is 0, blank is 1.
+015.py, code is 5, comment is 0, blank is 1.
+016.py, code is 14, comment is 0, blank is 1.
+017.py, code is 14, comment is 0, blank is 1.
+018.py, code is 14, comment is 0, blank is 1.
+019.py, code is 14, comment is 2, blank is 1.
+020.py, code is 14, comment is 0, blank is 1.
+021.py, code is 14, comment is 0, blank is 1.
+022.py, code is 14, comment is 2, blank is 1.
+023.py, code is 14, comment is 0, blank is 1.
+024.py, code is 14, comment is 0, blank is 1.
+025.py, code is 14, comment is 0, blank is 1.
+026.py, code is 14, comment is 0, blank is 1.
+027.py, code is 14, comment is 0, blank is 1.
+028.py, code is 14, comment is 0, blank is 1.
+029.py, code is 14, comment is 0, blank is 1.
+030.py, code is 14, comment is 0, blank is 1.
+031.py, code is 14, comment is 2, blank is 1.
+032.py, code is 14, comment is 0, blank is 1.
+033.py, code is 14, comment is 0, blank is 1.
+034.py, code is 14, comment is 0, blank is 1.
+035.py, code is 14, comment is 0, blank is 1.
+036.py, code is 17, comment is 0, blank is 1.
+037.py, code is 14, comment is 0, blank is 1.
+038.py, code is 14, comment is 0, blank is 1.
+039.py, code is 14, comment is 0, blank is 1.
+040.py, code is 14, comment is 0, blank is 1.
+041.py, code is 14, comment is 0, blank is 1.
+042.py, code is 14, comment is 0, blank is 1.
+043.py, code is 14, comment is 2, blank is 1.
+044.py, code is 14, comment is 0, blank is 1.
+045.py, code is 14, comment is 0, blank is 1.
+046.py, code is 14, comment is 0, blank is 1.
+047.py, code is 14, comment is 0, blank is 1.
+048.py, code is 14, comment is 0, blank is 1.
+049.py, code is 14, comment is 0, blank is 1.
+050.py, code is 11, comment is 0, blank is 1.
+051.py, code is 14, comment is 0, blank is 1.
+052.py, code is 14, comment is 0, blank is 1.
+053.py, code is 14, comment is 0, blank is 1.
+054.py, code is 14, comment is 0, blank is 1.
+055.py, code is 14, comment is 0, blank is 1.
+056.py, code is 14, comment is 1, blank is 1.
+057.py, code is 14, comment is 0, blank is 1.
+058.py, code is 14, comment is 0, blank is 1.
+059.py, code is 14, comment is 2, blank is 1.
+060.py, code is 14, comment is 0, blank is 1.
+061.py, code is 14, comment is 3, blank is 1.
+062.py, code is 14, comment is 0, blank is 1.
+063.py, code is 14, comment is 0, blank is 1.
+064.py, code is 20, comment is 0, blank is 0.
+065.py, code is 14, comment is 0, blank is 1.
+066.py, code is 14, comment is 5, blank is 1.
+067.py, code is 14, comment is 0, blank is 1.
+068.py, code is 14, comment is 0, blank is 2.
+069.py, code is 14, comment is 0, blank is 1.
+070.py, code is 1, comment is 0, blank is 0.
+071.py, code is 14, comment is 0, blank is 1.
+072.py, code is 14, comment is 0, blank is 1.
+073.py, code is 14, comment is 0, blank is 1.
+074.py, code is 14, comment is 0, blank is 2.
+075.py, code is 5, comment is 0, blank is 1.
+076.py, code is 14, comment is 0, blank is 1.
+077.py, code is 14, comment is 0, blank is 2.
+078.py, code is 14, comment is 0, blank is 1.
+079.py, code is 14, comment is 0, blank is 1.
+080.py, code is 14, comment is 0, blank is 1.
+081.py, code is 14, comment is 0, blank is 1.
+082.py, code is 14, comment is 0, blank is 1.
+083.py, code is 14, comment is 0, blank is 1.
+084.py, code is 14, comment is 0, blank is 1.
+085.py, code is 14, comment is 0, blank is 1.
+086.py, code is 14, comment is 0, blank is 1.
+087.py, code is 14, comment is 0, blank is 1.
+088.py, code is 15, comment is 0, blank is 1.
+089.py, code is 5, comment is 0, blank is 1.
+090.py, code is 14, comment is 0, blank is 1.
+091.py, code is 14, comment is 0, blank is 3.
+092.py, code is 14, comment is 0, blank is 1.
+093.py, code is 14, comment is 0, blank is 1.
+094.py, code is 14, comment is 22, blank is 3.
+095.py, code is 5, comment is 0, blank is 1.
+096.py, code is 14, comment is 0, blank is 1.
+097.py, code is 14, comment is 1, blank is 1.
+098.py, code is 14, comment is 0, blank is 1.
+099.py, code is 13, comment is 0, blank is 1.
+100.py, code is 14, comment is 0, blank is 1.
+===============================================================================

@@ -1,0 +1,7 @@
+input reading - 0.05 
+conditional statement - 0.325 
+loop inside conditional statement - 0.2
+loop condition - 0.2 
+calculation - 0.2 [(i*i, i**2, pow(i,2)]
+print statement - 0.025
+extra statement - reduce 0.025 for each

@@ -1,0 +1,5 @@
+import statement matches - 0.1
+input reading matches - 0.1
+list comprehension matches - 0.6
+print statement - 0.2
+Extra statement - reduce 0.025 for each extra statement

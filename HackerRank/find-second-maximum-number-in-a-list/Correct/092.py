@@ -1,0 +1,5 @@
+n = int(input().strip())
+s = set([int(x) for x in input().strip().split(' ')])
+l = sorted(s)
+tam = len(l)
+print(l[tam-2])

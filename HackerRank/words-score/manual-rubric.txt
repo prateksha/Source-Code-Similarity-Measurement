@@ -1,0 +1,16 @@
+function defentition(is_vowel) - 0.15
+proper initialization of score -0.026
+first for loop matches - 0.083
+proper initialization of vowels - 0.026
+for loop inside the for loop - 0.1
+condition matches for the for loop inside the for loop - 0.083
+conditional statement inside the second for loop - 0.1
+condition of conditional statement in the second loop matches - 0.083
+vowel calculation matches - 0.083
+conditional statement inside the first for loop - 0.1
+condition of conditional statement inside the first for loop matches - 0.083
+score claculation - 0.083
+extra statement - reduce 0.025 for each
+
+
+ 

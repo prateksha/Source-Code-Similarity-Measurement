@@ -1,0 +1,6 @@
+n = int(input())
+a = set(map(int,input().split(' ')))
+b = list(a)
+b.sort()
+n = len(b)
+print(b[n-2])

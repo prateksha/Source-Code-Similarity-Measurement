@@ -1,0 +1,5 @@
+n = int(input())
+x = input().split()
+y = list(set(x))
+y.sort(key=int)
+print(y[len(y)-2])

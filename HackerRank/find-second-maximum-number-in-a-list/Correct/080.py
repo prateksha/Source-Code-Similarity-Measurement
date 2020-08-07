@@ -1,0 +1,5 @@
+input()
+ls = list(map(int, input().strip().split()))
+ls.sort()
+mx = max(ls)
+print(max([x for x in ls if x != mx ]))

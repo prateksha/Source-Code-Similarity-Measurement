@@ -1,0 +1,1 @@
+score_words=lambda w:sum(~sum(map(lambda c:c in'aeiouy',i))%2for i in w)+len(w)
