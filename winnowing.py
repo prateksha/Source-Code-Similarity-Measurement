@@ -239,16 +239,16 @@ if t!=0:
     normalization_score=normalization_score/(t*10)
     total_similarity_score_win = ((0.5*final_cosine_similarity_lev0) + (0.3*final_cosine_similarity_lev1) + (0.2*final_cosine_similarity_lev2))
     normalization_score = normalization_score
-    print("Winnowing similarity score : \n", total_similarity_score_win)
-    print("Normalization score : \n", normalization_score)
+    # print("Winnowing similarity score : \n", total_similarity_score_win)
+    # print("Normalization score : \n", normalization_score)
     final_score = (total_similarity_score_win*60)+(normalization_score*40)
-    print("Total score = : \n", final_score)
+    print("Similarity score = : \n", final_score)
 else:
     total_similarity_score_win = ((0.5*final_cosine_similarity_lev0) + (0.3*final_cosine_similarity_lev1) + (0.2*final_cosine_similarity_lev2))
-    print("Winnowing similarity score : \n", total_similarity_score_win)
-    print("Invalid norm: \n", )
+    # print("Winnowing similarity score : \n", total_similarity_score_win)
+    # print("Invalid norm: \n", )
     final_score = (total_similarity_score_win*100)
-    print("Total score = : \n", final_score)
+    print("Similarity score = : \n", final_score)
 
 
 program1_name = open("program1.txt", "r").readline()
