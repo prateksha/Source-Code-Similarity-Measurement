@@ -1,17 +1,7 @@
-# iSP - IoT Based Smart Parking System
-> The project for Internet of Things course.
+# Similarity, Syntax & Unit Testing for Automated Code Grading
+> 
 
 # Introduction
-<h4>Member</h4>
-
-| Number | ID | Name | 
-| ----- | ----- | --------- | 
-| 1 | ITITIU20112 | Nguyen Le Minh |
-| 2 | ITITIU20062| Nguyen Huu Minh Nhat |
-| 3 | ITITIU19194 | Truong Nhat Minh Quang |
-| 4 | ITITIU19076 | Dang Nguyen Nam Anh |
-| 5 | ITITIU19169 | Le Nguyen Binh Nguyen |
-| 6 | ITITIU19219 | Pham Quoc Tin |
 
 <h4>Motivation</h4> 
 <p>Our team originally planned to implement an AI model for automatically scanning the license plate when the vehicle want to park</p>
