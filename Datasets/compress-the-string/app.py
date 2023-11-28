@@ -1,9 +1,8 @@
 import os
 import subprocess
 import csv
-from winnowing import *
+from Test_program import winnowing
 from io import StringIO
-import unittest
 
 program1 = 'program1'
 program2 = 'program2'
@@ -22,7 +21,7 @@ program2 = 'program2'
 #         json.dump(ast, f, indent = "\t")
 
 def result(ref_file_path,file_path):
-    row = result_winnowing()
+    row = winnowing.result_winnowing()
     try:
         subprocess.run(["flake8", file_path], check=True, capture_output=True)
         print(f"No linting issues found in {file_path}")
@@ -47,9 +46,23 @@ def grade_flake8(issues):
     return score
 
 def write_csv(row):
-    with open("Similarity_Syntax_Style_results.csv", "a",newline='') as file:
+    csv_filename = "csv/Similarity_Syntax_Style_results.csv"
+    with open(csv_filename, "a",newline='') as file:
+        fieldnames = ['Ref Program', 'Program', 'Total Score Winnowing', 'Similarity Score', 'Syntax/Style Score']
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        
+        if file.tell() == 0:
+            writer.writeheader()
+
+        # writer.writerow({
+        #     'input_filename': input_filename,
+        #     'total_tests': total_amount,
+        #     'passed_amount': passed_amount,
+        #     'failed_amount': failed_amount
+        # })
         csvwriter = csv.writer(file)
         csvwriter.writerow(row)
+        print(f'Results written to {csv_filename}')
 
 def generate_ast(file_name, numeric_value, file_path):
     try:
@@ -60,7 +73,7 @@ def generate_ast(file_name, numeric_value, file_path):
         print(f"Return code: {e.returncode}")
 
 def process_directory(ref_file_path, directory_path):
-    generate_ast_file_path = 'generate_ast.py'
+    generate_ast_file_path = 'Test_program/generate_ast.py'
     numeric_value = ['1','2']
     generate_ast(generate_ast_file_path,numeric_value[0], ref_file_path)
     for file_name in os.listdir(directory_path):

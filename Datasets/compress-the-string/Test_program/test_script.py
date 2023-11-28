@@ -21,7 +21,7 @@ def test_submit_code(input_value, expected_output, request):
     cwd = os.getcwd()
 
     # Specify the path
-    ref_path = os.path.join(cwd, 'ref.py')
+    ref_path = './ref.py'
     # submit_path = os.path.join('Correct', file_name)
     submit_path = file_name
 

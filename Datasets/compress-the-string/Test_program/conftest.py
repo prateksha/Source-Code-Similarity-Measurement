@@ -30,7 +30,7 @@ def pytest_sessionfinish(session, exitstatus):
     print(f'there are {passed_amount} passed and {failed_amount} failed tests')
 
     # Write to CSV file
-    csv_filename = "unittest_result.csv"
+    csv_filename = "csv/unittest_result.csv"
     with open(csv_filename, 'a', newline='') as csvfile:
         fieldnames = ['input_filename', 'total_tests', 'passed_amount', 'failed_amount']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
