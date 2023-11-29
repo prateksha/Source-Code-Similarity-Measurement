@@ -1,0 +1,6 @@
+alias(name='sys')
+Name(id='x', ctx=Store())
+Call(func=Name(id='x', ctx=Load()), args=[Call(func=Attribute(value=Call(func=Name(id='x', ctx=Load()), args=[], keywords=[]), attr='strip', ctx=Load()), args=[], keywords=[])], keywords=[])
+BoolOp(op=Or(), values=[Compare(left=BinOp(left=Name(id='x', ctx=Load()), op=Mod(), right=Constant(value=2)), ops=[Eq()], comparators=[Constant(value=1)]), BoolOp(op=And(), values=[Compare(left=BinOp(left=Name(id='x', ctx=Load()), op=Mod(), right=Constant(value=2)), ops=[Eq()], comparators=[Constant(value=0)]), Compare(left=Name(id='x', ctx=Load()), ops=[GtE()], comparators=[Constant(value=6)]), Compare(left=Name(id='x', ctx=Load()), ops=[LtE()], comparators=[Constant(value=20)])])])
+Expr(value=Call(func=Name(id='x', ctx=Load()), args=[Constant(value='Weird')], keywords=[]))
+Expr(value=Call(func=Name(id='x', ctx=Load()), args=[Constant(value='Not Weird')], keywords=[]))

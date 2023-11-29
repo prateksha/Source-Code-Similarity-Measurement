@@ -1,0 +1,12 @@
+[
+  "Test_program/test_script.py::test_submit_code[0000111100\\n-]",
+  "Test_program/test_script.py::test_submit_code[111223545656664421\\n-]",
+  "Test_program/test_script.py::test_submit_code[123456\\n-]",
+  "Test_program/test_script.py::test_submit_code[12\\n-]",
+  "Test_program/test_script.py::test_submit_code[1\\n-]",
+  "test_script.py::test_submit_code[0000111100\\n-]",
+  "test_script.py::test_submit_code[111223545656664421\\n-]",
+  "test_script.py::test_submit_code[123456\\n-]",
+  "test_script.py::test_submit_code[12\\n-]",
+  "test_script.py::test_submit_code[1\\n-]"
+]

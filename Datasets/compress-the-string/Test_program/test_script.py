@@ -21,9 +21,9 @@ def test_submit_code(input_value, expected_output, request):
     cwd = os.getcwd()
 
     # Specify the path
-    ref_path = './ref.py'
-    # submit_path = os.path.join('Correct', file_name)
-    submit_path = file_name
+    ref_path = 'ref.py'
+    submit_path = os.path.join('Correct', file_name)
+    # submit_path = file_name
 
     # Run ref.py and capture its output
     ref_output = subprocess.check_output(['python', ref_path], input=input_value, text=True).strip()

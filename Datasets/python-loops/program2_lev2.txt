@@ -1,0 +1,5 @@
+Name(id='x', ctx=Store())
+Call(func=Name(id='x', ctx=Load()), args=[Call(func=Name(id='x', ctx=Load()), args=[], keywords=[])], keywords=[])
+Name(id='x', ctx=Store())
+Call(func=Name(id='x', ctx=Load()), args=[Constant(value=0), Name(id='x', ctx=Load())], keywords=[])
+Expr(value=Call(func=Name(id='x', ctx=Load()), args=[BinOp(left=Name(id='x', ctx=Load()), op=Pow(), right=Constant(value=2))], keywords=[]))

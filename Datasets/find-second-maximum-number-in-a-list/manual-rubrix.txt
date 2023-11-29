@@ -1,7 +1,0 @@
-input reading matches - 0.1
-array reading matches - 0.3
-set to list conversion - 0.15
-sorting the array - 0.2
-length calculation - 0.15
-print statement - 0.1
-Extra statement - reduce 0.025 for each extra statement

@@ -1,0 +1,2 @@
+Assign(targets=[Name(id='x', ctx=Store())], value=Call(func=Name(id='x', ctx=Load()), args=[Call(func=Name(id='x', ctx=Load()), args=[], keywords=[])], keywords=[]))
+For(target=Name(id='x', ctx=Store()), iter=Call(func=Name(id='x', ctx=Load()), args=[Constant(value=0), Name(id='x', ctx=Load())], keywords=[]), body=[Expr(value=Call(func=Name(id='x', ctx=Load()), args=[BinOp(left=Name(id='x', ctx=Load()), op=Pow(), right=Constant(value=2))], keywords=[]))], orelse=[])
