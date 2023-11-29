@@ -1,0 +1,11 @@
+input_filename,total_tests,passed_amount,failed_amount
+001.py,5,5,0
+002.py,5,5,0
+003.py,5,5,0
+004.py,5,5,0
+005.py,1,0,1
+001.py,5,5,0
+002.py,5,5,0
+003.py,5,5,0
+001.py,5,5,0
+002.py,5,5,0

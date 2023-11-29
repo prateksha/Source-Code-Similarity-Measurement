@@ -31,24 +31,60 @@ def result(ref_file_path,file_path):
         print(e.stdout.decode("utf-8"))
         issues = e.stdout.decode("utf-8")
 
-        score = grade_flake8(issues)
-        row.append(score)
+        error_issues, warning_issues, failure_issues = categorize_flake8_issues(issues)
+
+
+
+
+        score_failure = grade_flake8(len(failure_issues), 'failure')
+        score_errors = grade_flake8(len(error_issues), 'error')
+        score_warnings = grade_flake8(len(warning_issues), 'warning')
+
+        row.extend([score_failure, score_errors, score_warnings])
         # row.extend(unitest(ref_file_path, file_path))
+
         write_csv(row)
 
 
-def grade_flake8(issues):
-    if issues is None:
-        return 100  # Return a score of 100 if no issues
-    num_errors = issues.count('\n')  # Count the number of lines as each line represents an issue
+def categorize_flake8_issues(issues):
+    error_issues = []
+    warning_issues = []
+    failure_issues = []
+
+    if issues:
+        for line in issues.split('\n'):
+            if ': E' in line:
+                error_issues.append(line)
+            elif ': W' in line:
+                warning_issues.append(line)
+            elif ': F' in line:
+                failure_issues.append(line)
+
+    return error_issues, warning_issues, failure_issues
+
+def grade_flake8(issues, type):
+
     max_score = 100
-    score = max(0, max_score - num_errors)
+
+    match type:
+        case "failure":
+            score = (max_score - (5)*issues ) if ((max_score - (5)*issues) >= 0) else 0
+
+        case "error":
+            score = (max_score - (2) * issues) if ((max_score - (2) * issues) >= 0) else 0
+
+        case "warning":
+            score = (max_score - (1) * issues) if ((max_score - (1) * issues) >= 0) else 0
+
+        case _:
+            return
+
     return score
 
 def write_csv(row):
     csv_filename = "csv/Similarity_Syntax_Style_results.csv"
     with open(csv_filename, "a",newline='') as file:
-        fieldnames = ['Ref Program', 'Program', 'Total Score Winnowing', 'Similarity Score', 'Syntax/Style Score']
+        fieldnames = ['Ref Program', 'input_filename', 'Total Score Winnowing', 'Similarity Score', 'Score by num of failure', 'Score by num of error', 'Score by num of warning']
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         
         if file.tell() == 0:
@@ -87,6 +123,13 @@ def process_directory(ref_file_path, directory_path):
                 print(f"Error while running tests for {file_path}: {e}")
             generate_ast(generate_ast_file_path,numeric_value[1], file_path)
             result(ref_file_path,file_path)
+
+
+    data_similar = pd.read_csv('csv/Similarity_Syntax_Style_results.csv')
+    data_unittest = pd.read_csv('csv/unittest_result.csv')
+
+    data_merge = pd.merge(data_similar, data_unittest, on="input_filename", how="inner")
+    data_merge.to_csv("result")
 
 process_directory('ref.py','Correct')
 

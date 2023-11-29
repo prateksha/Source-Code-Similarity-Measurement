@@ -268,7 +268,7 @@ def result_winnowing():
 
     program1_name = open("program1.txt", "r").readline()
     program2_name = open("program2.txt", "r").readline()
-    row.extend([program1_name, program2_name, total_similarity_score_win, final_score])
+    row.extend([program1_name, program2_name[8:], total_similarity_score_win, final_score])
     return row
 
 # result_winnowing()
