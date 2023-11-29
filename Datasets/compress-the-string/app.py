@@ -3,6 +3,7 @@ import subprocess
 import csv
 from Test_program import winnowing
 from io import StringIO
+import pandas as pd
 
 program1 = 'program1'
 program2 = 'program2'
@@ -129,7 +130,7 @@ def process_directory(ref_file_path, directory_path):
     data_unittest = pd.read_csv('csv/unittest_result.csv')
 
     data_merge = pd.merge(data_similar, data_unittest, on="input_filename", how="inner")
-    data_merge.to_csv("result")
+    data_merge.to_csv("csv/result.csv")
 
 process_directory('ref.py','Correct')
 

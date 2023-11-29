@@ -1,9 +1,0 @@
-Ref Program,Program,Total Score Winnowing,Similarity Score,Score by num of failure,Score by num of error,Score by num of warning
-ref.py,Correct\001.py,0.495,29.7,100,78,89
-ref.py,Correct\002.py,1.0,100.0,100,96,98
-ref.py,Correct\003.py,1.0,100.0,100,98,99
-ref.py,Correct\004.py,0.8630000000000001,86.30000000000001,100,96,99
-ref.py,Correct\001.py,0.465,27.900000000000002,100,78,89
-ref.py,Correct\002.py,1.0,100.0,100,96,98
-ref.py,Correct\001.py,0.478,28.68,100,78,89
-ref.py,Correct\002.py,1.0,100.0,100,96,98
